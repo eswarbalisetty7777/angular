@@ -1,0 +1,7 @@
+<h3>Component 1</h3>
+<input type="text" placeholder="component1" [(ngModel)]="c1message"><br>
+<div *ngIf=c2message>
+    {{'text received from Component 2 is  '+c2message}}
+
+</div>
+<app-c2 [parentData]="c1message" (childEvent)="childEventHandler($event)"></app-c2>

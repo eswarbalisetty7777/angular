@@ -1,0 +1,7 @@
+<h3>Component 4</h3>
+<div *ngIf=message>
+{{'data from Component 3   '+message}}
+</div>
+<br><br>
+<input type="text" placeholder="component2" #inputElement >
+<button type="submit" (click)="fireEvent($event,inputElement)"  class="btn btn-primary">send text</button>

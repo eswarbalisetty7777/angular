@@ -1,0 +1,5 @@
+<h3>Component 2</h3>
+<div *ngIf=message>{{'text received from Component1 is  '+message}}</div>
+<br><br>
+<input type="text" placeholder="component2" [(ngModel)]="c2text">
+<button type="submit" (click)="fireEvent()"  class="btn btn-primary">send text</button>

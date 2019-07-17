@@ -1,0 +1,8 @@
+<h3>Component 3</h3>
+<input type="text" placeholder="component3" #message ><br>
+<button type="submit" (click)="fireEvent(message)"  class="btn btn-primary">Send Text</button>
+<div *ngIf=text>
+{{'text receivewd from Component4    ' + text}}
+
+</div>
+<app-c4 [parentData]=dataToSend (childEvent)="childEventHandler($event)"></app-c4>
